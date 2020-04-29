@@ -1,0 +1,42 @@
+{
+	"name" : "zendframework/skeleton-application",
+	"description" : "Skeleton Application for ZF2",
+	"require" : {
+		"php" : "^5.6 || ^7.0",
+		"zendframework/zend-i18n" : ">=2.7.3",
+		"tecnickcom/tcpdf" : ">=6.2.7",
+		"doctrine/orm" : ">=v2.5.6",
+		"doctrine/doctrine-orm-module" : ">=1.1.1",
+		"zf-commons/zfc-user-doctrine-orm" : ">=2.0.0",
+		"zendframework/zend-component-installer" : "^1.0 || ^0.3 || ^1.0.0-dev@dev",
+		"zendframework/zend-mvc" : "^3.0.1",
+		"kokspflanze/bjy-authorize" : "1.6.3",
+		"zendframework/zend-i18n-resources" : ">=2.5.2",
+		"zf-commons/zfc-user" : ">=3.0.0",
+		"zendframework/zend-serializer" : ">=2.8.0",
+		"zendframework/zend-navigation" : ">=2.8.1",
+		"zendframework/zend-mvc-plugin-flashmessenger" : ">=1.0.0",
+		"zendframework/zend-code" : ">=3.1.0",
+		"zendframework/zend-mvc-i18n" : ">=1.0.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Application\\" : "module/Application/src/",
+			"Test\\" : "module/Test/src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"ApplicationTest\\" : "module/Application/test/"
+		}
+	},
+	"minimum-stability" : "dev",
+	"license" : "BSD-3-Clause",
+	"keywords" : [
+		"framework",
+		"zf2"
+	],
+	"type" : "project",
+	"homepage" : "http://framework.zend.com/",
+	"prefer-stable" : true
+}

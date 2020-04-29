@@ -1,0 +1,47 @@
+<?php
+echo "<a href='" . $this->url(
+    'product',
+    array(
+        'action'    => 'add',
+        'id'        => 0,
+    )
+) . "'>" . $this->translate("Add") . "</a>";
+?>
+
+<table id='dataTable'>
+<thead>
+<?php
+echo "<tr><th>" . $this->translate("Name") . "</th><th></th><th></th><th></th></tr>";
+?>
+</thead>
+<tbody>
+<?php
+foreach ($this->data as $row) {
+    echo "<tr>
+        <td>" . $row->getName() . "</td>
+        <td><a target='_NEW' href='" . $this->url(
+        'product',
+        array(
+            'action'    => 'specification',
+            'id'        => $row->getId(),
+        )
+    ) . "'><span class='glyphicon glyphicon-cloud-download'></span>" . $this->translate("Product specification") . "</a></td>
+        <td><a href='" . $this->url(
+        'product',
+        array(
+            'action'    => 'add',
+            'id'        => $row->getId(),
+        )
+    ) . "'><span class='glyphicon glyphicon-edit'></span>" . $this->translate("Edit") . "</a></td>
+        <td><a class='resultA' href='" . $this->url(
+        'product',
+        array(
+            'action'    => 'delete',
+            'id'        => $row->getId(),
+        )
+    ) . "'><span class='glyphicon glyphicon-remove-circle'></span>" . $this->translate("Delete") . "</a></td>
+    </tr>";
+}
+?>
+</tbody>
+</table>

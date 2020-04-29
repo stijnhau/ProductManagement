@@ -1,0 +1,11 @@
+2.0.0
+- Make specification pdf and save of product and open in with the link.
+- More companies
+
+1.0.0
+- Full dutch translation translation
+- Add user acounts
+- Change pasword
+
+0.4.0
+- Menu's support

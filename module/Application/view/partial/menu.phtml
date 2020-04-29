@@ -1,0 +1,45 @@
+<ul class="nav navbar-nav">
+<?php
+foreach ($this->container as $page) {
+    if ($page->isActive()) {
+        $extra = 'class="active" ';
+    } else {
+        $extra = "";
+    }
+
+    if (!$page->hasPages()) {
+        ?>
+        <li <?php echo $extra; ?>><a href="<?php echo $page->getHref(); ?>"><?php echo $page->getLabel(); ?></a></li>
+        <?php
+    } else {
+        foreach ($page->getPages() as $child) {
+            if ($child->isActive()) {
+                $extra = 'class="active" ';
+                continue;
+            }
+        }
+
+        ?>
+        <li <?php echo $extra; ?>>
+            <a><?php echo $page->getLabel(); ?></a>
+            <ul>
+            <?php
+            foreach ($page->getPages() as $child) {
+                if ($child->isActive()) {
+                    $extra2 = 'class="active" ';
+                } else {
+                    $extra2 = "";
+                }
+
+                ?>
+                <li <?php echo $extra2; ?>><a href="<?php echo $child->getHref(); ?>"><?php echo $child->getLabel(); ?></a></li>
+                <?php
+            }
+            ?>
+            </ul>
+        </li>
+        <?php
+    }
+}
+?>
+</ul>

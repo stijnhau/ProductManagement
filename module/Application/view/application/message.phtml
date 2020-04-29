@@ -1,0 +1,9 @@
+<?php
+echo $this->message;
+if (is_array($this->messageArr)) {
+    foreach ($this->messageArr as $messageArr) {
+        foreach ($messageArr as $message) {
+            echo $this->translate($message) . "<br />";
+        }
+    }
+}

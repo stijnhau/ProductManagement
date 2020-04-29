@@ -1,0 +1,40 @@
+0.4.0 BETA
+- Upgraded zfcUser module to 3.0
+- When loggin in go to home page and not page with user details.
+- Loggedin email adress always visible
+- Logout button always visible
+
+0.3.0 BETA
+- Adding and editing customers
+- Creating order's with only customer date and name
+
+0.2.1 BETA
+- Jquery datables for allergenen and product
+
+0.2 BETA
+- ZF3
+
+0.1.1 BETA
+- Larger sideborders on PDF.
+
+0.1.0 BETA
+- Added report layout
+
+0.0.3 ALPHA (Never released)
+- Better error messages.
+- Improved dutch translation.
+- Better layout when adding allergen to product.
+
+0.0.2 ALPHA
+- Product specification pdf (begin (empty page just with name)
+- Login needed to see data.
+- Numeric validation on temparature
+- between validation on temperature
+
+0.0.1 ALPHA
+- List of allergen
+- add edit and remove allergen
+- List of products
+- add edit and remove products
+- add allergen to products
+- Begin of dutch translation
